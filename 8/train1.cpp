@@ -4,12 +4,12 @@ class Counter {
 public:
     int value;
 
-    Counter& operator++() { //префиксный инкремент
+    Counter& operator++() {
         ++value;
         return *this;
     };
 
-    Counter operator++(int) { //постфиксный инкремент
+    Counter operator++(int) {
         Counter temp = *this;
         ++value;
         return temp;
@@ -20,10 +20,10 @@ int main() {
     Counter c;
     c.value = 0;
 
-    ++c;
     c++;
+    ++c;
 
-    std::cout << c.value <<std::endl;
+    std::cout << c.value << std::endl;
 
     return 0;
 }

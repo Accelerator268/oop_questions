@@ -2,9 +2,6 @@
 
 class Animal {
 public:
-    // Animal() {};
-    // ~Animal() {};
-
     virtual void MakeSound() {
         std::cout << "Making Sound..." << std::endl;
     };
@@ -12,9 +9,6 @@ public:
 
 class Dog : public Animal{
 public:
-    // Dog() : Animal() {};
-    // ~Dog() {};
-
     void MakeSound() override {
         std::cout << "Woof" <<std::endl;
     };

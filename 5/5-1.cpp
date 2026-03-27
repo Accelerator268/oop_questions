@@ -16,6 +16,7 @@ public:
             std::cout << "wrong data" << std::endl;
         };
     };
+    ~BankAccount() {};
 
     void deposit (double amount) {
         if (authorized) {

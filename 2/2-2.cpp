@@ -1,10 +1,10 @@
 #include <iostream>
 
 auto main() -> int {
-    int x = 10; // x - lvalue, 10 - rvalue
-    int& ref = x; // ref - lvalue ссылка на lvalue
+    int x = 10; // не является ссылкой
+    int& ref = x; // ref - lvalue ссылка
     // int& ref1 = 20; - низя привязать лево к праву
-    const int& cref = x; // const lvalue может привязаться к lvalue и rvalue
+    const int& cref = 20; // const lvalue может привязаться к lvalue и rvalue
     std::cout << ref << " " << cref << std::endl;
 
     int&& rref = 10;

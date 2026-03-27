@@ -11,7 +11,7 @@ public:
         delete data;
     };
 
-    MyString(MyString&& other) {
+    MyString(MyString&& other) : data(other.data) {
         other.data = nullptr;
     };
 
